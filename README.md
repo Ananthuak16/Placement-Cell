@@ -15,7 +15,9 @@ This web application is designed to help Team Career Camp manage student intervi
 - [External Jobs List](#external-jobs-list)
 - [CSV Download](#csv-download)
 - [Minimalistic Design](#minimalistic-design)
-- [Video Submission](#video-submission)
+- [Video Demo](#VideoDemo)
+- [Github Repository](#GithubRepository)
+- [## Hosted Application](#HostedApplication)
 - [Suggestions](#suggestions)
 - [Contributing](#contributing)
 )
@@ -132,9 +134,19 @@ This web application is designed to help Team Career Camp manage student intervi
 
 - Use Bootstrap or other CSS frameworks for a clean and minimalistic design.
 
-## Video Submission
 
-- [Video Submission Link](#) - Provide a link to the video explaining your folder structure and project organization.
+## Video Demo
+
+Please watch the project demonstration video [here](<https://drive.google.com/file/d/1mjqHGL0DZzeWpzadOuHswwXE_fAW1r-u/view>).
+
+## Github Repository
+
+Explore the code on [GitHub](<https://github.com/Ananthuak16/Placement-Cell>).
+
+## Hosted Application
+
+Explore the Web app  on [GitHub](<https://placement-cell-rrlx.onrender.com/users/signin>).
+
 
 ## Suggestions
 
