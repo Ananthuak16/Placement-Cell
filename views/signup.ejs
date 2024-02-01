@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Include Bootstrap styles -->
+  <%- include('_bootstrap_styles')%>
+  <title>Sign Up</title>
+</head>
+<body style="background-color: #e6e9e9">
+  <!-- Include the main layout -->
+  <%- include('layout')%>
+
+  <!-- Signup form container -->
+  <div class="w-50 mx-auto mt-5" style="display: grid; place-content: center; width: 530px; background: white;
+  border-radius: 5px;
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);">
+    <!-- Form title -->
+    <div class="mx-auto mt-3 mb-4" style="width: 100px">
+      <h4>Sign Up</h4>
+    </div>
+
+    <!-- Signup form -->
+    <div class="mb3">
+      <form action="/users/create" method="post" >
+        <!-- Name input -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required/>
+        </div>
+
+        <!-- Email input -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="abc@email.com" name="email" required />
+        </div>
+
+        <!-- Password input -->
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password" required />
+        </div>
+
+        <!-- Confirm Password input -->
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required />
+        </div>
+
+        <!-- Signup button -->
+        <div class="mb-4 mt-3" style="display: flex; justify-content: center">
+          <button type="submit" class="btn btn-success btn-block mb-4">Sign Up</button>
+        </div>
+      </form>
+
+      <!-- Login link -->
+      <div class="mx-auto mb-3 mt-3" style="width: 300px">
+        <a href="/users/signin" style="margin-left: 100px">Log in Instead</a>
+      </div>
+    </div>
+
+    <!-- Include Bootstrap scripts -->
+    <%- include('_bootstrap_script')%>
+  </body>
+</html>

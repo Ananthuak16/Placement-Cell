@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Include Bootstrap styles -->
+    <%- include('_bootstrap_styles') %>
+    <title>Job Listings</title>
+</head>
+
+<body>
+    <!-- Include the main layout -->
+    <%- include('layout') %>
+
+    <!-- Job Listings container -->
+    <div class="w-75 mx-auto mt-5">
+        <h1>Job Listings:</h1>
+
+        <!-- List of job listings -->
+        <ul id="jobListings" class="mt-3 mb-3">
+            <!-- Loop through each job and display information -->
+            <% jobs.forEach(job => { %>
+            <li class="row">
+                <!-- Job title and company name -->
+                <div class="col-6">
+                    <h3><%= job.title %></h3>
+                    <p><%= job.company.display_name %></p>
+                </div>
+
+                <!-- Apply button with a link to the job -->
+                <div class="col-6 d-flex justify-content-end">
+                    <a href="<%= job.redirect_url %>" target="_blank" class="btn btn-success align-self-center">Apply</a>
+                </div>
+            </li>
+            <% }); %>
+        </ul>
+    </div>
+
+    <!-- Include Bootstrap scripts -->
+    <%- include('_bootstrap_script') %>
+</body>
+
+</html>
