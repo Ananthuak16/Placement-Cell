@@ -145,7 +145,7 @@ Explore the code on [GitHub](<https://github.com/Ananthuak16/Placement-Cell>).
 
 ## Hosted Application
 
-Explore the Web app  on [GitHub](<https://placement-cell-rrlx.onrender.com/users/signin>).
+Explore the Web app  on [Hosted](<https://placement-cell-rrlx.onrender.com>).
 
 
 ## Suggestions
